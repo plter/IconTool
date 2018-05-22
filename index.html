@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>IconTool</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+</head>
+<body style="margin: 0;">
+<div id="root" style="display: flex;flex-direction: column;padding: 10px;align-items: center;">
+    <img id="preview-image" style="cursor:pointer;display: block;" width="256" height="256"
+         src="res/preset_1024x1024.png">
+    <div style="height: 10px;"></div>
+    <div id="checkbox-container1"></div>
+    <div id="checkbox-container2"></div>
+    <div id="checkbox-container3"></div>
+
+    <div style="height: 10px;"></div>
+    <button id="btn-convert" class="btn btn-primary">转成图标</button>
+    <div style="flex: 1;"></div>
+</div>
+<script>
+    // You can also require other files to run in this process
+    require('./renderer.js');
+</script>
+</body>
+</html>
