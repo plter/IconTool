@@ -21,4 +21,4 @@ gulp.task("ProductionInstall", ["build"], function () {
 });
 
 
-gulp.task("default", ["ProductionInstall"]);
+gulp.task("default", ["build"]);
