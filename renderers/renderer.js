@@ -76,6 +76,7 @@ class Renderer {
         window.onresize = this.window_resizeHandler.bind(this);
         this._previewImage.onclick = this.presetImage_clickedHandler.bind(this);
         this._btnConvert.onclick = this.btnConvert_clickedHandler.bind(this);
+        document.querySelector("#btn-nav-to-source").onclick = e => electron.shell.openExternal("https://github.com/plter/IconTool");
     }
 
     window_resizeHandler() {
