@@ -68,6 +68,8 @@ class Renderer {
             this._checkboxContainer3.appendChild(cb.htmlNode);
             this._sizeCheckboxes.set(size.key, cb);
         }
+
+        document.querySelector("#version-div").innerHTML = `版本： v${electron.remote.app.getVersion()}`;
     }
 
     addListeners() {
